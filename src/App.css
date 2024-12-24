@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+.main-container {
+  width: 100%;
+  min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("https://e1.pxfuel.com/desktop-wallpaper/819/276/desktop-wallpaper-light-backgrounds-light-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.box-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 40%;
+  height: max-content;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 2rem 0px;
+}
+
+.input-main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2.5rem;
+  width: 100%;
+  border-radius: 10px;
+}
+.input-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+label {
+  font-weight: 500;
+  font-size: 20px;
+  width: 20%;
+}
+select {
+  padding: 10px 6px;
+  border-radius: 5px;
+  width: 50%;
+}
+h2 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+@media (max-width: 699px) {
+  .box-container {
+    width: 95%;
+    box-shadow: none;
+  }
+  .input-main-container {
+    gap: 2rem;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+  }
+  .input-container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  select {
+    width: 100%;
+  }
+  label {
+    width: 100%;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 990px) {
+  .box-container {
+    width: 80%;
+  }
+  label {
+    width: 19%;
+  }
+}
+
+@media (min-width: 990px) and (max-width: 1400px) {
+  label {
+    width: 27%;
+  }
+}
